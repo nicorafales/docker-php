@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  web:
+    build:
+      dockerfile: ./Docker/nginx/Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./Docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+  app:
+    build:
+      dockerfile: ./Docker/php/Dockerfile
+      target: app
+  db:
+    image: mariadb:latest
+    volumes:
+      - mariadbdata:/var/lib/mariadb
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+      MARIADB_DATABASE: ${MARIADB_DATABASE}
+
+volumes:
+  mariadbdata:
