@@ -2,10 +2,17 @@
 
 namespace App\Model;
 
+use DateTimeImmutable;
+use DateTimeInterface;
+
 readonly class Order
 {
-    public int $id;
+    public DateTimeInterface $orderDate;
 
-    /** @var Product[] */
-    public array $products;
+    public function __construct(
+        public int $id,
+        string $order_date,        
+    ) {
+        $this->orderDate = new DateTimeImmutable($order_date);
+    }
 }

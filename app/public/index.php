@@ -21,6 +21,8 @@ if (!function_exists('dd')) {
 $factory = new RepositoryFactory();
 
 
+
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $productName = $_POST['product'];
     $quantity = $_POST['quantity'];

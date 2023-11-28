@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Model\Order;
 use App\Model\Product;
 use PDO;
+use PDOException;
 
 class OrderWithProductsRepository
 {
@@ -41,14 +42,12 @@ class OrderWithProductsRepository
     public function store(string $productName, int $quantity): int
     {
         $newProductStmt = '';
+        //todo: this could be added to a pre-existing order. I might need some UX refactor too.
         $order ??= $this->createOrder();
         $orderId = $order->id;
 
         //todo: later on, I want to support multiple products per order.
-        $product = new Product;
-        $product->name = $productName;
-        $product->quantity = $quantity;
-        $products = [$product];
+        $products = [new Product($productName, $quantity)];
 
         foreach ($products as $idx => $product) {
             $newProductStmt .= <<<SQL
@@ -64,11 +63,14 @@ class OrderWithProductsRepository
             $bindings["{$idx}_quantity"] = $product->quantity;
         }
 
+        // remove trailing comma.
+        $newProductStmt = rtrim($newProductStmt, ',');
+
         $qry = <<<SQL
-            INSERT INTO `order_item` (
+            INSERT INTO `order_items` (
                 `order_id`,
-                `name`,
-                `quantity`,
+                `product_name`,
+                `quantity`
             ) VALUES 
                 $newProductStmt
             ;
@@ -76,23 +78,32 @@ class OrderWithProductsRepository
 
         $stmt = $this->connection->prepare($qry);
 
-        $stmt->execute($bindings);
+        try {
+            $stmt->execute($bindings);
+
+        } catch (PDOException $e) {
+            throw new \Exception("Couldn't create an order for ($productName, $quantity)", previous: $e);
+        }
 
         return $orderId;
     }
 
     private function createOrder(): Order
     {
-        $fetchStmt = $this->connection->prepare(<<<SQL
+        $this->connection->exec(<<<SQL
+            INSERT INTO orders (order_date) VALUES (NOW());
+        SQL);
+
+        $fetchStmt = $this->connection->query(<<<SQL
             SELECT * FROM `orders` ORDER BY 1 DESC LIMIT 1;
         SQL);
 
-        $res = $fetchStmt->fetchAll(PDO::FETCH_CLASS, Order::class);
+        /** @var Order $order */
+        $order = current($fetchStmt->fetchAll(
+            PDO::FETCH_FUNC, 
+            static fn (int $id, string $order_date): Order => new Order($id, $order_date)
+        ));
 
-        // dd('dasxcz',$res);
-
-        return current(
-            $fetchStmt->fetchAll(PDO::FETCH_CLASS, Order::class)
-        );
+        return $order;
     }
 }

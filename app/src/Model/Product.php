@@ -4,7 +4,10 @@ namespace App\Model;
 
 readonly class Product
 {
-    public string $name;
+    public function __construct(
+        public string $name,
+        public int $quantity,
 
-    public int $quantity;
+    ) {        
+    }
 }

@@ -51,8 +51,8 @@ class MariaDbConnection
 
         $ordersTable = <<<SQL
             CREATE TABLE orders (  
-                id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
-                create_time DATETIME COMMENT 'Create Time',
+                id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                order_date DATETIME
             )
         SQL;
 
