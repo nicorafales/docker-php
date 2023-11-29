@@ -14,8 +14,8 @@ jobs:
             - name: Run Tests
               working-directory: ./app
               run: composer run-phpunit
-            - run: docker build --target app -t nicorafales/php-composer:1.1 -f ./Docker/php/Dockerfile .
-            - run: docker build -t nicorafales/nginx-php:1.0 -f ./Docker/nginx/Dockerfile .
+            - run: docker build --target app -t nicorafales/php-composer:1.1.0 -f ./Docker/php/Dockerfile .
+            - run: docker build -t nicorafales/nginx-php:1.0.0 -f ./Docker/nginx/Dockerfile .
             - run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PWD }}
             - run: docker push nicorafales/php-composer:1.1
             - run: docker push nicorafales/nginx-php:1.0
