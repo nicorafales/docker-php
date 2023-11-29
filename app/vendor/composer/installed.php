@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'nicorafales/shophp',
+        'name' => 'nicorafales/docker-php',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'b49fca58c5e72cd8ae716f1cfc178c54175da565',
+        'reference' => 'dfec0645fc45b7c9646c054d864a4f7c1adbb9db',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -28,10 +28,10 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-        'nicorafales/shophp' => array(
+        'nicorafales/docker-php' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'b49fca58c5e72cd8ae716f1cfc178c54175da565',
+            'reference' => 'dfec0645fc45b7c9646c054d864a4f7c1adbb9db',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -40,7 +40,7 @@
         'nikic/php-parser' => array(
             'pretty_version' => '4.x-dev',
             'version' => '4.9999999.9999999.9999999-dev',
-            'reference' => 'e453389866395e57146efe12077458c2d906687d',
+            'reference' => '2a5e81f7caae572f096f5cc83d0ef75687127e1c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nikic/php-parser',
             'aliases' => array(),
@@ -69,7 +69,7 @@
         'phpunit/php-code-coverage' => array(
             'pretty_version' => '9.2.x-dev',
             'version' => '9.2.9999999.9999999-dev',
-            'reference' => '00bc23209e885ae1aab33c9a2303b0eb8ebd5c28',
+            'reference' => 'ce38eacbf713811e349b59a3a95e15d194c2f76f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/php-code-coverage',
             'aliases' => array(),
@@ -114,7 +114,7 @@
         'phpunit/phpunit' => array(
             'pretty_version' => '9.6.x-dev',
             'version' => '9.6.9999999.9999999-dev',
-            'reference' => 'd492067162cc3685ef35452e6ac02bd09744aa95',
+            'reference' => '60b3af971ece034547a360bef2eb06ec8b827414',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
@@ -323,7 +323,7 @@
         'symfony/cache' => array(
             'pretty_version' => '6.4.x-dev',
             'version' => '6.4.9999999.9999999-dev',
-            'reference' => '045f2b274012d11c24aa0228b2daec36a40b6ca2',
+            'reference' => 'ac2d25f97b17eec6e19760b6b9962a4f7c44356a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/cache',
             'aliases' => array(),
@@ -360,16 +360,16 @@
         'symfony/var-exporter' => array(
             'pretty_version' => '7.1.x-dev',
             'version' => '7.1.9999999.9999999-dev',
-            'reference' => 'a546e8d1c028f49ffdaf9f3042ccd15a4ebbf630',
+            'reference' => '88ffc3ccf955daf96738080bf56232c8e4665041',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/var-exporter',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'theseer/tokenizer' => array(
-            'pretty_version' => '1.2.1',
-            'version' => '1.2.1.0',
-            'reference' => '34a41e998c2183e22995f158c581e7b5e755ab9e',
+            'pretty_version' => '1.2.2',
+            'version' => '1.2.2.0',
+            'reference' => 'b2ad5003ca10d4ee50a12da31de12a5774ba6b96',
             'type' => 'library',
             'install_path' => __DIR__ . '/../theseer/tokenizer',
             'aliases' => array(),

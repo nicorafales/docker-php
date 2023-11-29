@@ -145,12 +145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "e453389866395e57146efe12077458c2d906687d"
+                "reference": "2a5e81f7caae572f096f5cc83d0ef75687127e1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e453389866395e57146efe12077458c2d906687d",
-                "reference": "e453389866395e57146efe12077458c2d906687d",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/2a5e81f7caae572f096f5cc83d0ef75687127e1c",
+                "reference": "2a5e81f7caae572f096f5cc83d0ef75687127e1c",
                 "shasum": ""
             },
             "require": {
@@ -161,7 +161,7 @@
                 "ircmaxell/php-yacc": "^0.0.7",
                 "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
-            "time": "2023-11-12T15:49:53+00:00",
+            "time": "2023-11-28T19:10:38+00:00",
             "bin": [
                 "bin/php-parse"
             ],
@@ -329,12 +329,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "00bc23209e885ae1aab33c9a2303b0eb8ebd5c28"
+                "reference": "ce38eacbf713811e349b59a3a95e15d194c2f76f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/00bc23209e885ae1aab33c9a2303b0eb8ebd5c28",
-                "reference": "00bc23209e885ae1aab33c9a2303b0eb8ebd5c28",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/ce38eacbf713811e349b59a3a95e15d194c2f76f",
+                "reference": "ce38eacbf713811e349b59a3a95e15d194c2f76f",
                 "shasum": ""
             },
             "require": {
@@ -359,7 +359,7 @@
                 "ext-pcov": "PHP extension that provides line coverage",
                 "ext-xdebug": "PHP extension that provides line coverage as well as branch and path coverage"
             },
-            "time": "2023-11-09T06:48:38+00:00",
+            "time": "2023-11-27T14:34:10+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -663,12 +663,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "d492067162cc3685ef35452e6ac02bd09744aa95"
+                "reference": "60b3af971ece034547a360bef2eb06ec8b827414"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d492067162cc3685ef35452e6ac02bd09744aa95",
-                "reference": "d492067162cc3685ef35452e6ac02bd09744aa95",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/60b3af971ece034547a360bef2eb06ec8b827414",
+                "reference": "60b3af971ece034547a360bef2eb06ec8b827414",
                 "shasum": ""
             },
             "require": {
@@ -704,7 +704,7 @@
                 "ext-soap": "To be able to generate mocks based on WSDL files",
                 "ext-xdebug": "PHP extension that provides line coverage as well as branch and path coverage"
             },
-            "time": "2023-11-12T09:29:13+00:00",
+            "time": "2023-11-28T08:23:09+00:00",
             "bin": [
                 "phpunit"
             ],
@@ -2013,12 +2013,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "045f2b274012d11c24aa0228b2daec36a40b6ca2"
+                "reference": "ac2d25f97b17eec6e19760b6b9962a4f7c44356a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/045f2b274012d11c24aa0228b2daec36a40b6ca2",
-                "reference": "045f2b274012d11c24aa0228b2daec36a40b6ca2",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/ac2d25f97b17eec6e19760b6b9962a4f7c44356a",
+                "reference": "ac2d25f97b17eec6e19760b6b9962a4f7c44356a",
                 "shasum": ""
             },
             "require": {
@@ -2052,7 +2052,7 @@
                 "symfony/messenger": "^5.4|^6.0|^7.0",
                 "symfony/var-dumper": "^5.4|^6.0|^7.0"
             },
-            "time": "2023-11-07T10:18:57+00:00",
+            "time": "2023-11-24T19:28:07+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -2278,12 +2278,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-exporter.git",
-                "reference": "a546e8d1c028f49ffdaf9f3042ccd15a4ebbf630"
+                "reference": "88ffc3ccf955daf96738080bf56232c8e4665041"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/a546e8d1c028f49ffdaf9f3042ccd15a4ebbf630",
-                "reference": "a546e8d1c028f49ffdaf9f3042ccd15a4ebbf630",
+                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/88ffc3ccf955daf96738080bf56232c8e4665041",
+                "reference": "88ffc3ccf955daf96738080bf56232c8e4665041",
                 "shasum": ""
             },
             "require": {
@@ -2292,7 +2292,7 @@
             "require-dev": {
                 "symfony/var-dumper": "^6.4|^7.0"
             },
-            "time": "2023-11-14T12:38:37+00:00",
+            "time": "2023-11-20T16:43:42+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -2330,7 +2330,7 @@
                 "serialize"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-exporter/tree/v7.0.0-RC1"
+                "source": "https://github.com/symfony/var-exporter/tree/7.0"
             },
             "funding": [
                 {
@@ -2350,17 +2350,17 @@
         },
         {
             "name": "theseer/tokenizer",
-            "version": "1.2.1",
-            "version_normalized": "1.2.1.0",
+            "version": "1.2.2",
+            "version_normalized": "1.2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/tokenizer.git",
-                "reference": "34a41e998c2183e22995f158c581e7b5e755ab9e"
+                "reference": "b2ad5003ca10d4ee50a12da31de12a5774ba6b96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/34a41e998c2183e22995f158c581e7b5e755ab9e",
-                "reference": "34a41e998c2183e22995f158c581e7b5e755ab9e",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/b2ad5003ca10d4ee50a12da31de12a5774ba6b96",
+                "reference": "b2ad5003ca10d4ee50a12da31de12a5774ba6b96",
                 "shasum": ""
             },
             "require": {
@@ -2369,7 +2369,7 @@
                 "ext-xmlwriter": "*",
                 "php": "^7.2 || ^8.0"
             },
-            "time": "2021-07-28T10:34:58+00:00",
+            "time": "2023-11-20T00:12:19+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -2391,7 +2391,7 @@
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
             "support": {
                 "issues": "https://github.com/theseer/tokenizer/issues",
-                "source": "https://github.com/theseer/tokenizer/tree/1.2.1"
+                "source": "https://github.com/theseer/tokenizer/tree/1.2.2"
             },
             "funding": [
                 {
