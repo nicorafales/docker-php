@@ -25,8 +25,8 @@ jobs:
 
             - name: Build and push Docker images
               run: |
-                docker build --target app -t nicorafales/php-composer:1.1.0 -f ./Docker/php/Dockerfile .
-                docker build -t nicorafales/nginx-php:1.0.0 -f ./Docker/nginx/Dockerfile .
+                docker build --target app -t nicorafales/php-composer:1.1 -f ./Docker/php/Dockerfile .
+                docker build -t nicorafales/nginx-php:1.0 -f ./Docker/nginx/Dockerfile .
                 docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PWD }}
                 docker push nicorafales/php-composer:1.1
                 docker push nicorafales/nginx-php:1.0
