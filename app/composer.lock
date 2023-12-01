@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c8f50c46a7e97862159f021e2a0b0c4",
+    "content-hash": "0484a12ac6eac813c2ac7ed420e1a845",
     "packages": [
         {
             "name": "predis/predis",
@@ -1190,12 +1190,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "60b3af971ece034547a360bef2eb06ec8b827414"
+                "reference": "70004109dbe3f1ee5fc29551240d04471a3cdd09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/60b3af971ece034547a360bef2eb06ec8b827414",
-                "reference": "60b3af971ece034547a360bef2eb06ec8b827414",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/70004109dbe3f1ee5fc29551240d04471a3cdd09",
+                "reference": "70004109dbe3f1ee5fc29551240d04471a3cdd09",
                 "shasum": ""
             },
             "require": {
@@ -1285,7 +1285,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-28T08:23:09+00:00"
+            "time": "2023-11-29T12:09:43+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -2308,7 +2308,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2",
+        "php": "^8.3",
         "ext-pdo": "*",
         "ext-pdo_mysql": "*"
     },

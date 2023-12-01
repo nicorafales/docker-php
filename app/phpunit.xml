@@ -9,9 +9,10 @@
          convertDeprecationsToExceptions="true"
          failOnRisky="true"
          failOnWarning="true"
+         testdox="true"
          verbose="true">
     <testsuites>
-        <testsuite name="default">
+        <testsuite name="Tests">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

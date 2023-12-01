@@ -3,7 +3,7 @@
         'name' => 'nicorafales/docker-php',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'dfec0645fc45b7c9646c054d864a4f7c1adbb9db',
+        'reference' => '3d99708cd7d7bfd189ab82539aaf6b97ef3df1e6',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -31,7 +31,7 @@
         'nicorafales/docker-php' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'dfec0645fc45b7c9646c054d864a4f7c1adbb9db',
+            'reference' => '3d99708cd7d7bfd189ab82539aaf6b97ef3df1e6',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -114,7 +114,7 @@
         'phpunit/phpunit' => array(
             'pretty_version' => '9.6.x-dev',
             'version' => '9.6.9999999.9999999-dev',
-            'reference' => '60b3af971ece034547a360bef2eb06ec8b827414',
+            'reference' => '70004109dbe3f1ee5fc29551240d04471a3cdd09',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),

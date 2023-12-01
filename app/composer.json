@@ -11,6 +11,7 @@
     ],
     "require": {
         "php": "^8.3",
+        "ext-json":"*",
         "ext-pdo": "*",
         "ext-pdo_mysql": "*",
         "symfony/cache": "^6.1",
@@ -22,7 +23,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "src",
-            "Test\\": "tests"
+            "Tests\\": "tests"
         }
     },
     "scripts": {

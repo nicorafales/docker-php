@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":[]}
+{"version":1,"defects":[],"times":{"Tests\\Unit\\TestExample::testItWorks":0.001,"Tests\\Unit\\TestExample::test_phpunit_works":0.002}}
