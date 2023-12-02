@@ -10,7 +10,10 @@ COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr
 # Install php extensions
 # exit on errors, exit on unset variables, print every command as it is executed
 RUN set -eux; \
-    install-php-extensions pdo pdo_mysql;
+    install-php-extensions \
+     zip \
+     pdo \
+     pdo_mysql;
 
 
 
