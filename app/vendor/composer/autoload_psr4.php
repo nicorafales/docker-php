@@ -7,6 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Tests\\' => array($baseDir . '/tests'),
+    'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Symfony\\Contracts\\Service\\' => array($vendorDir . '/symfony/service-contracts'),
     'Symfony\\Contracts\\Cache\\' => array($vendorDir . '/symfony/cache-contracts'),
     'Symfony\\Component\\VarExporter\\' => array($vendorDir . '/symfony/var-exporter'),
@@ -16,6 +19,9 @@ return array(
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
     'Predis\\' => array($vendorDir . '/predis/predis/src'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
+    'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
+    'GrahamCampbell\\ResultType\\' => array($vendorDir . '/graham-campbell/result-type/src'),
+    'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'App\\' => array($baseDir . '/src'),

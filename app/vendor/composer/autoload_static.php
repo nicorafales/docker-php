@@ -8,6 +8,9 @@ class ComposerStaticInit4010a4b655d7fb2b768447de8b936317
 {
     public static $files = array (
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
     );
 
@@ -18,6 +21,9 @@ class ComposerStaticInit4010a4b655d7fb2b768447de8b936317
         ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Php80\\' => 23,
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\Service\\' => 26,
             'Symfony\\Contracts\\Cache\\' => 24,
             'Symfony\\Component\\VarExporter\\' => 30,
@@ -30,9 +36,15 @@ class ComposerStaticInit4010a4b655d7fb2b768447de8b936317
             'Psr\\Cache\\' => 10,
             'Predis\\' => 7,
             'PhpParser\\' => 10,
+            'PhpOption\\' => 10,
+        ),
+        'G' => 
+        array (
+            'GrahamCampbell\\ResultType\\' => 26,
         ),
         'D' => 
         array (
+            'Dotenv\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
         ),
@@ -46,6 +58,18 @@ class ComposerStaticInit4010a4b655d7fb2b768447de8b936317
         'Tests\\' => 
         array (
             0 => __DIR__ . '/../..' . '/tests',
+        ),
+        'Symfony\\Polyfill\\Php80\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
         'Symfony\\Contracts\\Service\\' => 
         array (
@@ -83,6 +107,18 @@ class ComposerStaticInit4010a4b655d7fb2b768447de8b936317
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'PhpOption\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
+        'GrahamCampbell\\ResultType\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
+        ),
+        'Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -98,6 +134,7 @@ class ComposerStaticInit4010a4b655d7fb2b768447de8b936317
     );
 
     public static $classMap = array (
+        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
@@ -520,6 +557,7 @@ class ComposerStaticInit4010a4b655d7fb2b768447de8b936317
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
+        'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -720,6 +758,7 @@ class ComposerStaticInit4010a4b655d7fb2b768447de8b936317
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
         'TheSeer\\Tokenizer\\NamespaceUriException' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUriException.php',
@@ -728,6 +767,8 @@ class ComposerStaticInit4010a4b655d7fb2b768447de8b936317
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
+        'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         '©' => __DIR__ . '/..' . '/symfony/cache/Traits/ValueWrapper.php',
     );
 
